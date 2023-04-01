@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -101,10 +102,12 @@ class DetailsRow extends StatelessWidget {
         icon,
         Text(
           text,
-          style: const TextStyle(
-            color: Colors.indigo,
-            fontSize: 20,
-            fontFamily: "Roboto",
+          style: GoogleFonts.ralewayDots(
+            textStyle: const TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
         const SizedBox(),
